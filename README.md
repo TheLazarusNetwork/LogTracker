@@ -1,0 +1,2 @@
+# LogTracker
+Track logs securely
