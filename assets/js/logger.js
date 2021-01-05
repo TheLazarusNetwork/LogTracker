@@ -1,0 +1,3 @@
+var LoggerContractAddress = "0xD3F3299e9E392e523a157B8F0aE647f328032992";
+
+var LoggerContractABI = [{ "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "sender", "type": "address" }, { "indexed": false, "internalType": "string", "name": "data", "type": "string" }], "name": "Log", "type": "event" }, { "inputs": [{ "internalType": "string", "name": "data", "type": "string" }], "name": "dataLog", "outputs": [], "stateMutability": "nonpayable", "type": "function" }]
