@@ -5,6 +5,7 @@ document.getElementById("loadLogs").addEventListener("click", function(event) {
 
 async function loadLogs() {
     // Check for the events fired
+    $("#display-logs").show();
     logData = await getLogData();
     let logTableHTML = "";
     for (let index in logData) {
@@ -30,7 +31,7 @@ function getLogData() {
                 console.log("returned values", obj[array[0]].returnValues);
                 resolve(events);
             } else {
-                console.error(err)
+                console.error(error);
                 resolve(error);
             }
         });

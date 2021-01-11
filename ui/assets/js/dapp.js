@@ -116,7 +116,7 @@ async function fetchAccountDetails() {
     document.getElementById('walletStatus').innerHTML = "Connected";
     document.getElementById('walletAddress').innerHTML = "Connected Wallet: " + coinbase;
     let walletETHBalance = await getETHBalance();
-    document.getElementById('walletDetails').innerHTML = "Connected to  " + await checkNetwork() + " | Balance: " + walletETHBalance + " ETH";
+    document.getElementById('walletDetails').innerHTML = "Connected to  " + (await checkNetwork()).toUpperCase() + " Network with Balance: " + walletETHBalance + " ETH";
 }
 
 async function startDApp() {
