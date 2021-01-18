@@ -8,14 +8,16 @@ LABEL developer = "Shachindra <shachindra@lazarus.network>"
 
 WORKDIR /app
 
-RUN go get github.com/TheLazarusNetwork/LogTracker
+RUN git clone https://github.com/TheLazarusNetwork/LogTracker.git 
 
-RUN go build -o LogTracker github.com/TheLazarusNetwork/LogTracker
+WORKDIR /app/LogTracker
+
+RUN go build -o LogTracker .
 
 COPY .env .
 
 EXPOSE $PORT
 
-#ENTRYPOINT ["/app/LogTracker"]
+#ENTRYPOINT ["/app/LogTracker/LogTracker"]
 
-CMD ["/app/LogTracker"]
+CMD ["/app/LogTracker/LogTracker"]
