@@ -1,0 +1,6 @@
+APP_MODE = debug
+SERVER = 0.0.0.0
+PORT = 9080
+MNEMONIC = twelve or twenty four seed words
+INFURA_ENDPOINT = wss://rinkeby.infura.io/ws/v3/MY_INFURA_KEY
+LOGGER_CONTRACT_ADDRESS = 0xD3F3299e9E392e523a157B8F0aE647f328032992

@@ -121,7 +121,7 @@ func readAllLogs(c *gin.Context) {
 
 		parsedLogs, err := loggerABI.Unpack("Log", vLog.Data)
 		utility.CheckError("Failed to parse logs:", err)
-		fmt.Println(parsedLogs[0])
+		fmt.Println(parsedLogs[0].(string))
 	}
 
 	// Decryption
